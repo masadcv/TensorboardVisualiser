@@ -84,8 +84,7 @@ def get_args():
     argsparser.add_argument("--input_nodes", required=True, help="Input nodes")
     argsparser.add_argument("--output_nodes", required=True, help="Output nodes")
     argsparser.add_argument("--input_data", required=True, help="Input data")
-    argsparser.add_argument(
-        "--output_data", default="infer_out", required=False, help="Output data folder"
+    argsparser.add_argument("--output_data", required=True, help="Output data folder"
     )
     return argsparser.parse_args()
 
